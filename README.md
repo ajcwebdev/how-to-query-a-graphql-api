@@ -76,6 +76,52 @@ fetch('https://rickandmortyapi.com/graphql', {
 
 [graphql-request](https://github.com/prisma-labs/graphql-request) is a minimal GraphQL client that supports Node and browsers.
 
+### Create package.json and install dependencies
+
+```bash
+yarn init -y
+yarn add graphql graphql-request react react-dom react-scripts
+```
+
+### Add scripts and browser list
+
+```json
+{
+  "name": "how-to-query-a-graphql-api-with-graphql-request",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "graphql": "^15.5.0",
+    "graphql-request": "^3.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+```
+
 ### index.html
 
 ```html
@@ -147,6 +193,53 @@ render(
 ## Apollo Client
 
 [Apollo Client](https://github.com/apollographql/apollo-client) is a caching GraphQL client with integrations for React and other popular frontend libraries/frameworks.
+
+### Install dependencies
+
+```bash
+yarn add @apollo/react-hooks apollo-boost
+```
+
+### Add scripts and browser list
+
+```json
+{
+  "name": "how-to-query-a-graphql-api-with-apollo-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
+    "apollo-boost": "^0.4.9",
+    "graphql": "^15.5.0",
+    "graphql-request": "^3.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
+```
 
 ### index.html
 
